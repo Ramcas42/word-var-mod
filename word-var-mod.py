@@ -46,9 +46,12 @@ parrafo1.add_run(", identificada con RUC N° 20602639160, con domicilio en Juli�
 parrafo1.add_run("representada por su Gerente General, señor Armando Fernández Mendieta, identificado con DNI N° 47101934, ")
 parrafo1.add_run("conforme consta en poder inscrito en la Partida N° 13979407, a quien en adelante se le denominará ")
 parrafo1.add_run("MESTIZA (EL CLIENTE y MESTIZA,").bold = True
-parrafo1.add_run("de manera conjunta, se denominarán las “Partes”), en los términos y condiciones siguientes: ")
+parrafo1.add_run("de manera conjunta, se denominarán las “Partes”), en los términos y condiciones siguientes: \n")
 
-### Segundo Parrafo       
+### Segundo Parrafo
+
+clausula1 = document.add_paragraph(" ")
+clausula1.add_run("CLÁUSULA PRIMERA:\t ANTECEDENTES").bold = True
 
 
 
@@ -56,4 +59,4 @@ parrafo1.add_run("de manera conjunta, se denominarán las “Partes”), en los 
 
 document.add_page_break()
 
-document.save('Contrato.docx')
+document.save('Contrato/Contrato.docx')
